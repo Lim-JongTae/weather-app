@@ -113,7 +113,7 @@ export const useWeatherStore = defineStore('Weather',{
         this.cities.push(newCity)
         showMessage({
           title: '알림',
-          description: '도시 "' + city.value + '"를 추가하였습니다.'
+          description: '도시 "' + city + '"를 추가하였습니다.'
         }) 
         this.saveToCookie()
         this.isLoading = false
