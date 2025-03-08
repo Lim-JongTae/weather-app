@@ -98,7 +98,7 @@ export const useWeatherStore = defineStore('Weather',{
         if (!data.value) {
           showError({
             title: 'Error',
-            description: '도시를 찾을수 없습니다.'
+            description: '도시 "' + city + '"찾을수 없습니다.'
           })
           return
         }
